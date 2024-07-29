@@ -3,6 +3,17 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+export const getMail = async(req, res)=>{
+  try {
+    const reps = "hello word.!"
+    res.status(200).send({ data: reps, success: true, message:"ok"})
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({ data: null, success: false, message :"Internal Server Error"})
+  }
+}
+
+
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
