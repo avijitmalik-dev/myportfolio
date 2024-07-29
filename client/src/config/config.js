@@ -1,7 +1,7 @@
 import  axios  from 'axios';
 
 const apiConfig = axios.create(({
-    baseURL : "https://myportfolio-backend-five.vercel.app",
+    baseURL : "https://myportfolio-backend-flax.vercel.app",
     withCredentials : true
 }));
 

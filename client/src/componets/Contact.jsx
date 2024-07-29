@@ -38,7 +38,7 @@ function Contact() {
         setMessage("An error occurred. Please try again.");
       }
     } catch (error) {
-      setMessage("Message Send Failed: " + error.message);
+      setMessage("Message Send Failed:");
     }
   };
 
